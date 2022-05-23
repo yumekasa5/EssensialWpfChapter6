@@ -14,6 +14,50 @@
     </Window.Resources>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <TabControl
+            Grid.Row="0">
+            <TabItem Header="Ping Check">
+
+            </TabItem>
+            <TabItem Header="Infomation">
+                <DataGrid Margin="10">
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Number" Width="*" />
+                        <DataGridTextColumn Header="Name" Width="*" />
+                        <DataGridTextColumn Header="Value" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+            </TabItem>
+            <TabItem Header="Result">
+
+            </TabItem>
+
+        </TabControl>
+        <ToolBar
+            Grid.Row="1">
+
+        </ToolBar>
+
+
+
+
     </Grid>
-    
+
+
 </mah:MetroWindow>
