@@ -31,11 +31,13 @@ namespace EssensialWpfChapter6
             //DataGridに行を追加
             machines = new List<MachineInfoStruct>
             {
-                new MachineInfoStruct(500, "MultiCoptor", 35),
-                new MachineInfoStruct(478, "Humanoid", 46),
-                new MachineInfoStruct(546, "StanfordManipulator", 78),
-                new MachineInfoStruct(789, "AirDrone", 68),
-                new MachineInfoStruct(688, "AMG8833", 589)
+                new MachineInfoStruct(7000, "VL53L0x", 9999),
+                new MachineInfoStruct(5000, "MPU9250", 9999),
+                new MachineInfoStruct(5460, "MC023CG-SY", 9999),
+                new MachineInfoStruct(7890, "MC023MG-SY", 68),
+                new MachineInfoStruct(6880, "AMG8833", 589),
+                new MachineInfoStruct(5660, "HC-SR04", 600),
+                new MachineInfoStruct(5661, "MC031CG-SY", 700)
             };
 
             //DataGridに追加

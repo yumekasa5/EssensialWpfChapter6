@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EssensialWpfChapter6"
         mc:Ignorable="d"
-        Title="DataGrid Binding" Height="450" Width="800">
+        Title="Sensor Signal Monitor" Height="450" Width="800">
     <Window.Resources>
         <SolidColorBrush x:Key="toShare">
             Yellow
@@ -40,13 +40,13 @@
                         </Style>
                     </DataGrid.ColumnHeaderStyle>
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Number" 
+                        <DataGridTextColumn Header="Sensor Id" 
                                             Width="*"
                                             Binding="{Binding Number}"/>
-                        <DataGridTextColumn Header="Name"
+                        <DataGridTextColumn Header="Sensor Name"
                                             Width="*"
                                             Binding="{Binding Name}"/>
-                        <DataGridTextColumn Header="Value" 
+                        <DataGridTextColumn Header="Output Value" 
                                             Width="*"
                                             Binding="{Binding Value}"/>
                     </DataGrid.Columns>
