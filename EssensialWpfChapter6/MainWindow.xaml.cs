@@ -21,9 +21,25 @@ namespace EssensialWpfChapter6
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        //機器情報のリスト
+        private List<MachineInfoStruct> machines;
+        
         public MainWindow()
         {
             InitializeComponent();
+
+            //DataGridに行を追加
+            machines = new List<MachineInfoStruct>
+            {
+                new MachineInfoStruct(500, "MultiCoptor", 35),
+                new MachineInfoStruct(478, "Humanoid", 46),
+                new MachineInfoStruct(546, "StanfordManipulator", 78),
+                new MachineInfoStruct(789, "AirDrone", 68),
+                new MachineInfoStruct(688, "AMG8833", 589)
+            };
+
+            //DataGridに追加
+            InfoDataGrid.ItemsSource = machines;
         }
     }
 }

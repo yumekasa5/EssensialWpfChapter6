@@ -29,7 +29,10 @@
 
             </TabItem>
             <TabItem Header="Infomation">
-                <DataGrid Margin="10">
+                <DataGrid 
+                    Margin="10"
+                    x:Name="InfoDataGrid"
+                    AutoGenerateColumns="False">
                     <DataGrid.ColumnHeaderStyle>
                         <Style TargetType="DataGridColumnHeader">
                             <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -37,9 +40,15 @@
                         </Style>
                     </DataGrid.ColumnHeaderStyle>
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Number" Width="*" />
-                        <DataGridTextColumn Header="Name" Width="*" />
-                        <DataGridTextColumn Header="Value" Width="*" />
+                        <DataGridTextColumn Header="Number" 
+                                            Width="*"
+                                            Binding="{Binding Number}"/>
+                        <DataGridTextColumn Header="Name"
+                                            Width="*"
+                                            Binding="{Binding Name}"/>
+                        <DataGridTextColumn Header="Value" 
+                                            Width="*"
+                                            Binding="{Binding Value}"/>
                     </DataGrid.Columns>
                 </DataGrid>
 
