@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 
-namespace EssensialWpfChapter6
+namespace SensorSignalMonitor
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,25 +23,27 @@ namespace EssensialWpfChapter6
     {
         //機器情報のリスト
         private List<MachineInfoStruct> machines;
-        
+
         public MainWindow()
         {
             InitializeComponent();
 
             //DataGridに行を追加
             machines = new List<MachineInfoStruct>
-            {
-                new MachineInfoStruct(7000, "VL53L0x", 9999),
-                new MachineInfoStruct(5000, "MPU9250", 9999),
-                new MachineInfoStruct(5460, "MC023CG-SY", 9999),
-                new MachineInfoStruct(7890, "MC023MG-SY", 68),
-                new MachineInfoStruct(6880, "AMG8833", 589),
-                new MachineInfoStruct(5660, "HC-SR04", 600),
-                new MachineInfoStruct(5661, "MC031CG-SY", 700)
-            };
+        {
+            new MachineInfoStruct(7000, "VL53L0x", 9999),
+            new MachineInfoStruct(5000, "MPU9250", 9999),
+            new MachineInfoStruct(5460, "MC023CG-SY", 9999),
+            new MachineInfoStruct(7890, "MC023MG-SY", 68),
+            new MachineInfoStruct(6880, "AMG8833", 589),
+            new MachineInfoStruct(5660, "HC-SR04", 600),
+            new MachineInfoStruct(5661, "MC031CG-SY", 700)
+        };
 
             //DataGridに追加
             InfoDataGrid.ItemsSource = machines;
         }
     }
+
 }
+

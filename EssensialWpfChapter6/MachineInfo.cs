@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EssensialWpfChapter6
+namespace SensorSignalMonitor
 {
     /// <summary>
     /// 機器の情報をビューに渡す構造体
